@@ -1,6 +1,6 @@
 {
   "name": "fs-xattr",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "license": "MIT",
   "repository": "LinusU/fs-xattr",
   "type": "module",
@@ -17,10 +17,12 @@
     "test": "standard && mocha && ts-readme-generator --check",
     "lint": "standard"
   },
+  "dependencies": {
+    "node-gyp": "^12.3.0"
+  },
   "devDependencies": {
     "fs-temp": "^1.1.2",
     "mocha": "^8.4.0",
-    "node-gyp": "^12.3.0",
     "standard": "^16.0.3",
     "ts-readme-generator": "^0.4.3"
   },
