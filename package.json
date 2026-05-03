@@ -1,6 +1,6 @@
 {
   "name": "fs-xattr",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "license": "MIT",
   "repository": "LinusU/fs-xattr",
   "type": "module",
@@ -12,6 +12,7 @@
     "src/"
   ],
   "scripts": {
+    "node-gyp": "node-gyp",
     "build": "node-gyp rebuild",
     "test": "standard && mocha && ts-readme-generator --check",
     "lint": "standard"
