@@ -12,12 +12,14 @@
     "src/"
   ],
   "scripts": {
+    "build": "node-gyp rebuild",
     "test": "standard && mocha && ts-readme-generator --check",
     "lint": "standard"
   },
   "devDependencies": {
     "fs-temp": "^1.1.2",
     "mocha": "^8.4.0",
+    "node-gyp": "^12.3.0",
     "standard": "^16.0.3",
     "ts-readme-generator": "^0.4.3"
   },
