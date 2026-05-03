@@ -1,6 +1,6 @@
 {
   "name": "fs-xattr",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "repository": "LinusU/fs-xattr",
   "files": [
@@ -10,6 +10,7 @@
     "src/"
   ],
   "scripts": {
+    "node-gyp": "node-gyp",
     "test": "standard && mocha && ts-readme-generator --check",
     "lint": "standard"
   },
@@ -23,6 +24,10 @@
     "node": ">=8.6.0"
   },
   "os": [
-    "!win32"
-  ]
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "node-gyp": "^12.3.0"
+  }
 }
